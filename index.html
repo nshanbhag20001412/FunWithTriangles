@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <a class="navlink"href="#checkifTriangle">CheckIfTriangle</a>
+    <a class="navlink"href="#triangleQuiz">QuizTime</a>
+    <a class="navlink"href="#hypotenuse">Calculate Hypotenuse</a>
+    <a class="navlink"href="#area">Find the Area</a>
+  </nav>
+    
+
+    <section class="psection" id="checkifTriangle">
+        
+      <h1>Check if angles form a Triangle</h1>
+        
+        <label for="angle1">Angle 1</label>
+        <input class="angleInput" type="number">
+
+        <label for="angle2">Angle 2</label>
+        <input class="angleInput" type="number">
+
+        <label for="angle3">Angle 3</label>
+        <input class="angleInput" type="number">
+        
+        <button id="checkBtn">Check if Triangle</button>
+
+        <h3 id="display"></h3>
+    </section>
+
+    <section id="triangleQuiz">
+        <h1>Quiz on Triangles</h1>
+
+        <form action="" id="quizFrom">
+
+           <div class="container">
+
+             <p>
+                Question1: What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?
+             </p>
+
+             <input type="radio" name="question1" value="45">40'</input>
+             <input type="radio" value="90"name="question1">90'</input>
+             <input type="radio" value="60"name="question1">60'</input>
+
+           </div>
+
+           <div class="container">
+
+              <p>
+                Question2: If a triangle has an angle of 90 degrees, what is it called?  
+              </p>
+
+              <input type="radio" class="radio" value="Obuse" name="question2" >Obtuse</input>
+              <input type="radio" class="radio" value="Acute" name="question2" >Acute</input>
+              <input type="radio" class="radio" value="Right-Angled" name="question2" >Right-Angled</input>
+
+           </div>
+           
+        </form>
+        <button class="quizBtn">Submit Answers</button>
+        <h3 class="quizDisplay"></h3>
+    </section> 
+
+    <section class="psection" id="hypotenuse">
+      <h1>Calculate hypotenuse</h1>
+        
+      <label for="side1">Side 1</label>
+      <input class="sideInput" type="number"/>
+
+      <label for="side2">Side 2</label>
+      <input class="sideInput" type="number"/>
+
+      <button id="hypoBtn">Calculate hypotenuse</button>
+
+      <h3 id="hypoDisplay"></h3>
+    </section>
+
+     <section  id="area">
+        
+        <h1>Calculate Area of Triangles</h1>      
+        
+        <label for="side1">Base</label>
+        <input class="areaInput" type="number">
+
+        <label for="side2">Height</label>
+        <input class="areaInput" type="number">
+
+        <button id="areaBtn">Calculate Area</button>
+
+        <h3 id="areaDisplay"></h3>
+    </section> 
+    
+    <footer class="footer">
+    <a class="linkfooter"href="#checkifTriangle">Github</a>
+    <a class="linkfooter"href="#triangleQuiz">Twitter</a>
+    <a class="linkfooter"href="#hypotenuse">Instagram</a>
+    <a class="linkfooter"href="#area">LinkedIn</a>
+    </footer>
+</body>
+<script src="/index.js"></script>
+</html>
