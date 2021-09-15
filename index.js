@@ -66,10 +66,16 @@ function calculateSumOfSquares(a,b){
 }
 
 function calculateHypo(){
-
-    const sumofSides=calculateSumOfSquares(Number(hypoInputs[0].value),Number(hypoInputs[1].value),3);
-    const hypo=Math.sqrt(sumofSides);
-    hypoDisplay.innerText="The Hypotenuse is ="+ hypo;
+   
+   if(Number(hypoInputs[0].value)>0 &&Number(hypoInputs[1].value)>0){
+      const sumofSides=calculateSumOfSquares(Number(hypoInputs[0].value),Number(hypoInputs[1].value),3);
+      const hypo=Math.sqrt(sumofSides);
+      hypoDisplay.innerText="The Hypotenuse is ="+ hypo;
+   }
+   else{
+      hypoDisplay.innerText="Enter positive values";
+   }
+   
  }
  
  if(hypoBtn)
